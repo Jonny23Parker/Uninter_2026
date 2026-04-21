@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODS 14 - Córrego do Judeu | Preservação da Vida na Água</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e8f4f8 0%, #d1e8f0 100%);
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #006994 0%, #004d66 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .ods-logo {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 15px;
+        }
+
+        .stat-card.alert {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 1.5rem;
+            border-left: 3px solid #006994;
+            padding-left: 1.5rem;
+            margin-left: 1rem;
+        }
+
+        .timeline-item::before {
+            content: "●";
+            position: absolute;
+            left: -0.8rem;
+            top: 0;
+            color: #006994;
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #006994;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin: 0.5rem;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #004d66;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="ods-logo">🌊 🐟 🏞️</div>
+        <h1>ODS 14: Vida na Água</h1>
+        <p>Combate à Poluição de Oceanos e Rios através da Conscientização Digital</p>
+        <p style="margin-top: 1rem; font-size: 1.1rem;">📍 Córrego do Judeu - Avenida Timbó, Taubaté/SP</p>
+    </header>
+
+    <div class="container">
+        <!-- Dashboard de Métricas -->
+        
+            <div class="stat-card alert">
+                <div class="stat-number">09/12/2025</div>
+                <div>Último vazamento</div>
+                <small>Estireno-butadieno (IQT)</small>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">R$8M</div>
+                <div>Em obras de contenção</div>
+                <small>Prefeitura de Taubaté</small>
+            </div>
+        </div>
+
+        <!-- Sobre o Projeto -->
+        <div class="card">
+            <h2>🎯 Sobre o Projeto</h2>
+            <p>O projeto "ODS 14: Vida na Água" tem como objetivo conscientizar a comunidade sobre a poluição do <strong>Córrego do Judeu</strong>, localizado no Parque Aeroporto, Taubaté/SP. Através da análise de dados públicos (CETESB, IBAMA, notícias) e coleta de informações da comunidade via Google Forms, buscamos identificar padrões de poluição e propor soluções sustentáveis.</p>
+            <br>
+            <p><strong>Setor de aplicação:</strong> Escolas municipais, comunidades locais, associações comunitárias e grupos socioambientais da região.</p>
+        </div>
+
+        <!-- Linha do Tempo -->
+        <div class="card">
+            <h2>📅 Linha do Tempo - Córrego do Judeu</h2>
+            <div class="timeline">
+                <div class="timeline-item">                  
+                  <strong> até 20/04/2026 - Nenhuma ocorrência </strong><br>
+                    Nenhuma ocorrencia de contaminação vinda de empresas ou despejo de líquidos foi constatada.
+                </div>
+                <div class="timeline-item">
+                    <strong>09/12/2025 - Vazamento Químico</strong><br>
+                    Vazamento de estireno-butadieno pela Indústrias Químicas Taubaté (IQT). Água do córrego ficou branca (cor de leite). CETESB monitorou e notificou a empresa. <em>Fonte: G1 Vale do Paraíba</em>
+                </div>
+                <div class="timeline-item">
+                    <strong>10/12/2025 - Dissolução</strong><br>
+                    Produto residual na galeria pluvial, água ainda esbranquiçada. CETESB informou que chuva ajudaria na dissolução.
+                </div>
+                <div class="timeline-item">
+                    <strong>2022 - Relatos Moradores</strong><br>
+                    Moradores relataram água esbranquiçada recorrente, suspeitando de múltiplas indústrias da região.
+                </div>
+                <div class="timeline-item">
+                    <strong>2018 - Erosão e Interdição</strong><br>
+                    Avenida Timbó cedeu devido à erosão do córrego. Via interditada por 8 meses para obras de contenção.
+                </div>
+                <div class="timeline-item">
+                    <strong>2002 - Início da Canalização</strong><br>
+                    Processo CETESB nº 069710/02: Regularização de obras de canalização do Córrego Judeu III.
+                </div>
+            </div>
+        </div>
+
+        <!-- Como Ajudar -->
+        <div class="card">
+            <h2>💚 Como Você Pode Ajudar</h2>
+            <ul style="margin-left: 1.5rem;">
+                <li>✓ Não descartar lixo ou óleo nas galerias pluviais</li>
+                <li>✓ Reportar atividades suspeitas à CETESB: <strong>0800 013 2233</strong></li>
+                <li>✓ Participar de mutirões de limpeza no bairro Parque Aeroporto</li>
+                <li>✓ Compartilhar este projeto com vizinhos e familiares</li>
+                <li>✓ Cobrar das autoridades a conclusão das obras de canalização</li>
+            </ul>
+        </div>
+
+        <!-- Resultados Obtidos -->
+        <div class="card">
+            <h2>📈 Resultados Obtidos</h2>
+            <ul style="margin-left: 1.5rem;">
+                <li>✓ Identificação de <strong>3 áreas críticas</strong> de poluição hídrica através de análise de dados ambientais públicos</li>
+                <li>✓ Redução da poluição de sólidos nas áreas laterais ao córrego em <strong>pelo menos 30%</strong> na semana de conscientização</li>
+                <li>✓ Coleta de <strong>respostas da comunidade</strong> via Google Forms sobre percepção ambiental</li>
+                <li>✓ Criação de <strong>dashboard interativo</strong> com dados da CETESB e notícias</li>
+            </ul>
+        </div>
+
+        <!-- Referências -->
+        <div class="card">
+            <h2>📚 Referências</h2>
+            <ul style="margin-left: 1.5rem; font-size: 0.9rem;">
+                <li>ONU. Agenda 2030: Objetivos de Desenvolvimento Sustentável – ODS 14: Vida na Água.</li>
+                <li>CETESB. Processo nº 069710/02 - Regularização de Obras de Canalização - Córrego Judeu III.</li>
+                <li>G1 Vale do Paraíba. "Produto químico de indústria vaza em córrego e tinge água de branco em Taubaté" (09/12/2025).</li>
+                <li>G1 Vale do Paraíba. "Substância que vazou e tingiu água de córrego em Taubaté é identificada" (10/12/2025).</li>
+                <li>G1 Vale do Paraíba. "Após quatro anos, Avenida Timbó é interditada para obras em Taubaté" (19/11/2018).</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>🌱 Projeto de Extensão - Ciência de Dados UNINTER</p>
+        <p>Jonatas de Siqueira Bitencourt Cursino | RU: 4613238</p>
+        <p>📧 jonatas.d.siqueira@gmail.com | 📍 Taubaté, SP</p>
+        <p style="margin-top: 1rem; font-size: 0.8rem;">ODS 14 - Vida na Água | Combate à Poluição através da Conscientização Digital</p>
+    </footer>
+
+    
+</body>
+</html>
